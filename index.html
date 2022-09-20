@@ -9,11 +9,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="./imges/dyson-icon.png">
 </head>
-
 <body>
   <header>
     <div class="inner">
@@ -154,7 +154,7 @@
       </div>
     </div>
   </header>
-
+  <!-- //header -->
 
   <main>
     <section class="main_window">
@@ -170,6 +170,7 @@
       <img src="imges/KR Trade-in camp main banner_FC_EC_PC.jpg" alt="" class="pc_img">
       <img src="imges/KR Trade-in camp main banner_FC_EC_mo.jpg" alt="" class="mobile_img">
     </section>
+    <!-- //main_window -->
 
     <section class="service">
       <div class="inner">
@@ -202,6 +203,7 @@
         </div>
       </div>
     </section>
+    <!-- //service -->
 
     <section class="popular">
       <div class="inner">
@@ -245,6 +247,7 @@
         </div>
       </div>
     </section>
+    <!-- //popular -->
 
     <section class="pet">
       <div class="text_wrap">
@@ -260,6 +263,7 @@
       <img src="imges/pet-grooming-kit-video-updated-3.jpg" alt="" class="pc_img">
       <img src="imges/pet-grooming-kit-video-updated-3 (mo).jpg" alt="" class="mobile_img">
     </section>
+    <!-- //pet -->
 
     <section class="dyson_info">
       <div class="inner">
@@ -294,9 +298,9 @@
             <p>다이슨 데모 스토어는 제품을 직접 경험할 수 있는 공간입니다.</p>
           </a>
         </div>
-        
       </div>
     </section>
+    <!-- //dyson_info -->
 
     <section class="call">
       <div class="inner">
@@ -328,8 +332,10 @@
         </div>
       </div>
     </section>
+    <!-- //call -->
   </main>
-
+  <!-- //main -->
+  
   <footer>
     <div class="inner">
       <div class="footer_top">
@@ -369,16 +375,9 @@
           <small>
             
             다이슨코리아 유한회사 대표이사: 한지훈 서울특별시 강남구 테헤란로 142, 아크플레이스 17층 06236<br>
-            
-            
             사업자등록번호 811-81-00675 통신판매번호 2017-서울강남-04029 <a href="#">사업자정보확인</a> <br>
-            
-            
             고객센터: 080-300-4253(수신자 부담) /1588-4253 (운영시간: 월-금 오전 9시-오후 6시) 이메일:<a href="#">skyhn0207@naver.com</a> <br>
-
-            
             호스팅 제공자 아마존웹서비스
-                        
           </small>
         </p>
       </div>
@@ -391,30 +390,7 @@
     </div>
   </footer>
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('.search_close').click(function(){
-        $('.search_full').slideUp(300);
-      })
-    
-      $('.search_open').click(function(){
-        $('.search_full').slideDown(300);
-      })
-
-      $('.hd_ham').click(function(){
-        $('.hd_all_menu').stop().slideToggle(300);
-        $(this).toggleClass('on')
-      })
-    
-
-      $('.hd_list_btn').click(function(){
-        $(this).find(' ~ .hd_list').slideToggle(300);
-        $(this).find(' > i ').toggleClass('on');
-      })
-    })
-  </script>
-  
+  <!-- script link -->
+  <script src="js/main.js"></script>
 </body>
 </html>
